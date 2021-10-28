@@ -5,6 +5,5 @@ words = [
     'austria',
     'kabul',
     'vienna',
-    'madrid',
-
+    'madrid'
 ]

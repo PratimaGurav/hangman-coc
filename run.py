@@ -1,3 +1,9 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+# Hangman
+import string
+from words import words
+
+def start_game():
+    """Start the game for the user requesting for name 
+    and if they would like to start
+    """
+    
