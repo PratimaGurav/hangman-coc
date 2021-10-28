@@ -1,5 +1,5 @@
 # Hangman
-import string
+import random
 from words import words
 
 def start_game():
