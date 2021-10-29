@@ -1,5 +1,5 @@
-# word list for the game
-words = [
+#word list for the game
+words_list = [
     'spain',
     'afghanistan',
     'austria',

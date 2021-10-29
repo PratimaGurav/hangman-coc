@@ -1,10 +1,10 @@
 import random
-from words import words
+from words import words_list
 
 
 def intro_msg():
     """
-    Function for welcome message and requesting the user for name
+    Function for logo
     """
     print(
         """
@@ -16,6 +16,34 @@ def intro_msg():
                             |___/
         """
     )
-    name = input('What is your name?\n')
-    print(f'Hello, {name}')
+
+
+def start_game():  
+    """
+    Start the game, retrives username from the player
+    """ 
+    # print the welcome message
     intro_msg()
+    name = input("What is your name?\n")
+    print(f"Hello, {name}")
+    if input("Would you like to play Hangman? (Y)").upper() == "Y":
+        hangman()
+    else:
+        print("You need to enter a username to continue...\n")  
+        start_game()
+
+# function to get random word from the list
+def get_word():
+    """
+    Picks a random word from words.py
+    """
+    word = random.choice(words_list)
+    return word.upper()
+
+
+def hangman():
+    """
+    Play the game
+    """
+
+    
