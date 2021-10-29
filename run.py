@@ -1,5 +1,4 @@
 import random
-import string
 from words import words_list
 
 
