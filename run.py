@@ -1,9 +1,21 @@
-# Hangman
 import random
 from words import words
 
-def start_game():
-    """Start the game for the user requesting for name 
-    and if they would like to start
+
+def intro_msg():
     """
-    
+    Function for welcome message and requesting the user for name
+    """
+    print(
+        """
+         _   _
+        | | | | __ _ _ __   __ _ _ __ ___   __ _ _ __
+        | |_| |/ _` | '_ \\ / _` | '_ ` _ \\ / _` | '_ \\
+        |  _  | (_| | | | | (_| | | | | | | (_| | | | |
+        |_| |_|\\__,_|_| |_|\\__, |_| |_| |_|\\__,_|_| |_|
+                            |___/
+        """
+    )
+    name = input('What is your name?\n')
+    print(f'Hello, {name}')
+    intro_msg()
