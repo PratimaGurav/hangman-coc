@@ -1,4 +1,5 @@
 import random
+import string
 from words import words_list
 
 
@@ -31,6 +32,8 @@ def start_game():
     else:
         print("You need to enter a username to continue...\n")  
         start_game()
+
+
 
 # function to get random word from the list
 def get_word():
