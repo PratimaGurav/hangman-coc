@@ -26,20 +26,27 @@ def start_game():
         print("You need to enter a username to continue...\n")  
         start_game()
 
+def select_difficulty():''
+"""
+To select difficulty level
+"""
+    while True:
+        print("Please enter difficulty: E - easy, H - Hard")
+        difficulty = input().upper()
+    
+
+
+
 
 # function to get random word from the list
 def get_word():
-    """
-    Picks a random word from words.py
-    """
+    """Picks a random word from words.py"""
     word = random.choice(words_list)
 
     return word.upper()
 
 
 def hangman():
-    """
-    Play the game
-    """
+    """Play the game"""
 
     

@@ -1,3 +1,4 @@
+# Words list
 words_list = [
     'spain',
     'afghanistan',
