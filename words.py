@@ -33,6 +33,5 @@ words_list = [
     'prague',
     'dubai',
     'muscat',
-    'qatar',
-
+    'qatar'
 ]
