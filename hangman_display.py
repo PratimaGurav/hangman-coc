@@ -1,4 +1,4 @@
-display_hangman ={
+display_hangman = {
         0: """
                 ___________
                | /        |
