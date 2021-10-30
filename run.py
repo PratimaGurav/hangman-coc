@@ -21,7 +21,7 @@ def start_game():
     # print the welcome message
     name = input("What is your name?\n")
     print(f"Hello, {name}")
-    if input("Would you like to play Hangman? (Y)").upper() == "Y":
+    if input("Would you like to play Hangman?(Y)").upper() == "Y":
         hangman()
 
     else:
@@ -56,7 +56,7 @@ def hangman():
         word_list = [
             letter if letter in used_letters else '_' for letter in word]
         print(display_hangman[lives])
-        print('Current word: ', ' '.join(word_list))
+        print('Guess the word: ', ' '.join(word_list))
 
         user_letter = input('Guess a letter:\n').upper()
         if user_letter in alphabet - used_letters:
@@ -80,16 +80,17 @@ def hangman():
         print('You died, sorry. The word was', word)
         restart_game()
     else:
-        print('You have guessed the word', word, '\nCongratulations!!')
+        print('You have guessed the word', word, '\n Congratulations!!')
         restart_game()
 
 
 def restart_game():
-    """ Gives player an option to restart, otherwise returns to title screen """
+    """ Gives player an option to restart, otherwise returns to title screen 
+    """
     game_restart = False
 
     while not game_restart:
-        restart = input('Would you like to play Hangman? (Y/N)\n').upper()
+        restart = input('Would you like to play Hangman again? (Y/N)\n').upper()
 
         if restart == "Y":
             game_restart = True
