@@ -24,13 +24,15 @@ def start_game():
     if input("Would you like to play Hangman?(Y)").upper() == "Y":
         select_difficulty = ''
         while True:
-            print("Please enter difficulty level: E - easy, H - hard")
-            select_difficulty = input().upper()
+            select_difficulty = input("Please enter difficulty level: E - easy, H - hard\n")
+            select_difficulty = select_difficulty.upper()
+            print("You have chosen: ", select_difficulty)
+            break
         if select_difficulty == 'H':    
             del display_hangman[0]
-            del display_hangman[1]
-        else : hangman()    
-
+            hangman()
+        else: 
+            hangman()                  
     else:
         print("You need to enter a username to continue...\n")  
         start_game()
@@ -51,7 +53,7 @@ def hangman():
     alphabet = set(string.ascii_uppercase)
     used_letters = set()  # what the user has guessed
 
-    lives = 7
+    lives = len(display_hangman)
 
     # getting user input
     while len(word_letters) > 0 and lives > 0:
