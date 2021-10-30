@@ -1,5 +1,5 @@
 # Words list
-words_list = [
+words = [
     'spain',
     'afghanistan',
     'austria',
