@@ -1,5 +1,7 @@
 import random
-from words import words_list
+import string
+from words import words
+from hangman_display import display_hangman
 
 
 def start_game():
@@ -30,10 +32,8 @@ def start_game():
 # function to get random word from the list
 def get_word():
     """Picks a random word from words.py"""
-    word = random.choice(words_list)
+    word = random.choice(words)
     return word.upper()
-
-
 
 
 # function for game

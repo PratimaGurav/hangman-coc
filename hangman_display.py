@@ -1,4 +1,4 @@
-display_hangman =  {
+display_hangman ={
         0: """
                 ___________
                | /        |
@@ -54,5 +54,5 @@ display_hangman =  {
                |
                |
             """,
-        7: "",
-    }
+        7: ""
+}
