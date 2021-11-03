@@ -1,20 +1,13 @@
 # Words list
 words = [
     'spain',
-    'afghanistan',
     'austria',
     'kabul',
     'vienna',
     'madrid',
-    'amsterdam',
-    'netherlands',
     'india',
-    'australia',
     'london',
-    'switzerland',
-    'singapore',
     'brazil',
-    'argentina',
     'uruguay',
     'mexico',
     'miami',
@@ -109,6 +102,13 @@ diff_words = [
     'adelaide',
     'auckland',
     'hamilton',
-    'mauritius'
+    'mauritius',
+    'afghanistan',
+    'amsterdam',
+    'netherlands',
+    'australia',
+    'switzerland',
+    'singapore',
+    'argentina',
 
 ]

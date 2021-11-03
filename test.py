@@ -45,12 +45,11 @@ def get_word(choice):
         word = random.choice(diff_words)
     else:
         word = random.choice(words)
-    hangman()
+    hangman(word)
 
 # function for game
-def hangman():
+def hangman(word):
     """Play the game"""
-    word = get_word(choice)
     word_letters = set(word)  # letters in word
     alphabet = set(string.ascii_uppercase)
     used_letters = set()  # what the user has guessed
