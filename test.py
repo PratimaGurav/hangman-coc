@@ -1,5 +1,6 @@
 import random
 import string
+from words import words
 from words import diff_words
 from hangman_display import display_hangman
 
@@ -32,13 +33,13 @@ def start_game():
 def select_difficulty():
     choice = ""
     """Let the player pick and confirm a difficulty level."""
-    while choice not in ['e-easy', 'h-hard']:
+    while choice not in ['E', 'H']:
         choice = input("Please enter difficulty level: E - easy, H - hard\n>")
         choice = choice.upper()
-    get_word()
+    get_word(choice)
 
 # function to get random word from the list
-def get_word():
+def get_word(choice):
     """Picks a random word from words.py"""
     if choice == 'H':
         word = random.choice(diff_words)
@@ -49,7 +50,7 @@ def get_word():
 # function for game
 def hangman():
     """Play the game"""
-    word = get_word()
+    word = get_word(choice)
     word_letters = set(word)  # letters in word
     alphabet = set(string.ascii_uppercase)
     used_letters = set()  # what the user has guessed
