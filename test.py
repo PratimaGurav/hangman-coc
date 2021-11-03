@@ -21,21 +21,22 @@ def start_game():
     # print the welcome message
     name = input("What is your name?\n")
     print(f"Hello, {name}")
-    if input("Would you like to play Hangman?(Y)").upper() == "Y":
-        select_difficulty = ''
-        while True:
-            select_difficulty = input("Please enter difficulty level: E - easy, H - hard\n")
-            select_difficulty = select_difficulty.upper()
-            print("You have chosen: ", select_difficulty)
-            break
-        if select_difficulty == 'H':    
-            del display_hangman[0]
-            hangman()
-        else: 
-            hangman()  
+    if input('Would you like to play Hangman? (Y)').upper() == "Y":
+        def select_diff():
+            choice = ""
+        while choice not in ['Easy', 'Hard']:
+            choice = input("Please enter difficulty level: E - Easy, H - Hard")
+            choice = choice.upper()
+            print("You have chosen: ", select_diff)
+            select_diff()       
     else:
-        print("You need to enter a username to continue...\n")  
+        print('Please try again.')
         start_game()
+
+
+ 
+
+
 
 
 # function to get random word from the list
@@ -86,7 +87,7 @@ def hangman():
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
         print(display_hangman[lives])
-        print('You died, sorry. The word was', word)
+        print('Sorry out of lives, your game is over. The word was', word)
         restart_game()
     else:
         print('You have guessed the word', word, '\n Congratulations!!')
@@ -108,7 +109,6 @@ def restart_game():
         elif restart == "N":
             game_restart = True
             print('Goodbye!')
-            start_game()
 
         else:
             print('You must select Y or N. Please try again.')
