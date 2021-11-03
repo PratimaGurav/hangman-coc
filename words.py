@@ -88,19 +88,11 @@ words = [
     'toronto',
     'canada'
     'ottawa',
-    'adelaide',
-    'auckland',
-    'hamilton',
-    'mauritius',
     'myanmar',
     'vietnam',
     'seoul',
-    'philippines',
     'laos',
     'nepal',
-    'kathmandu',
-    'mongolia',
-    'uzbekistan',
     'iran',
     'iraq',
     'jordan',
@@ -108,4 +100,15 @@ words = [
     'cairo',
     'ukraine',
     'rome'
+]
+diff_words = [
+    'uzbekistan',
+    'mongolia',
+    'philippines',
+    'kathmandu',
+    'adelaide',
+    'auckland',
+    'hamilton',
+    'mauritius'
+
 ]

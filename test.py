@@ -1,6 +1,6 @@
 import random
 import string
-from words import words
+from words import diff_words
 from hangman_display import display_hangman
 
 
@@ -22,21 +22,20 @@ def start_game():
     name = input("What is your name?\n")
     print(f"Hello, {name}")
     if input('Would you like to play Hangman? (Y)').upper() == "Y":
-        def select_diff():
-            choice = ""
-        while choice not in ['Easy', 'Hard']:
-            choice = input("Please enter difficulty level: E - Easy, H - Hard")
-            choice = choice.upper()
-            print("You have chosen: ", select_diff)
-            select_diff()       
+        select_difficulty = ''
+        while True:
+            select_difficulty = input("Please enter difficulty level: E - easy, H - hard\n")
+            select_difficulty = select_difficulty.upper()
+            print("You have chosen: ", select_difficulty)
+            break
+            if select_difficulty == 'H':    
+                word = random.choice(diff_words)
+                hangman()
+            else: 
+                hangman()  
     else:
         print('Please try again.')
-        start_game()
-
-
- 
-
-
+    start_game()
 
 
 # function to get random word from the list
