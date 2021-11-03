@@ -22,17 +22,7 @@ def start_game():
     name = input("What is your name?\n")
     print(f"Hello, {name}")
     if input("Would you like to play Hangman?(Y)").upper() == "Y":
-        select_difficulty = ''
-        while True:
-            select_difficulty = input("Please enter difficulty level: E - easy, H - hard\n")
-            select_difficulty = select_difficulty.upper()
-            print("You have chosen: ", select_difficulty)
-            break
-        if select_difficulty == 'H':    
-            del display_hangman[0]
-            hangman()
-        else: 
-            hangman()                  
+        hangman()
     else:
         print("You need to enter a username to continue...\n")  
         start_game()
