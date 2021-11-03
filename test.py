@@ -22,28 +22,29 @@ def start_game():
     name = input("What is your name?\n")
     print(f"Hello, {name}")
     if input('Would you like to play Hangman? (Y)').upper() == "Y":
-        select_difficulty = ''
-        while True:
-            select_difficulty = input("Please enter difficulty level: E - easy, H - hard\n")
-            select_difficulty = select_difficulty.upper()
-            print("You have chosen: ", select_difficulty)
-            break
-            if select_difficulty == 'H':    
-                word = random.choice(diff_words)
-                hangman()
-            else: 
-                hangman()  
+        select_difficulty() 
     else:
         print('Please try again.')
-    start_game()
+        start_game()
 
+
+
+def select_difficulty():
+    choice = ""
+    """Let the player pick and confirm a difficulty level."""
+    while choice not in ['e-easy', 'h-hard']:
+        choice = input("Please enter difficulty level: E - easy, H - hard\n>")
+        choice = choice.upper()
+    get_word()
 
 # function to get random word from the list
 def get_word():
     """Picks a random word from words.py"""
-    word = random.choice(words)
-    return word.upper()
-
+    if choice == 'H':
+        word = random.choice(diff_words)
+    else:
+        word = random.choice(words)
+    hangman()
 
 # function for game
 def hangman():
