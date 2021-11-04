@@ -88,13 +88,13 @@ def hangman(num_lives):
     if lives == 0:
         print(display_hangman[lives])
         print('You died, sorry. The word was', word)
-        restart_game()
+        restart_game(num_lives)
     else:
         print('You have guessed the word', word, '\n Congratulations!!')
-        restart_game()
+        restart_game(num_lives)
 
 
-def restart_game():
+def restart_game(num_lives):
     """ Gives player an option to restart, otherwise returns to title screen 
     """
     game_restart = False
@@ -114,5 +114,8 @@ def restart_game():
         else:
             print('You must select Y or N. Please try again.')
 
-if __name__ == "__main__":
-    start_game()
+def main():
+     "main"
+     start_game()
+
+main()     
