@@ -1,7 +1,6 @@
 import random
 import string
 from words import words
-from words import diff_words
 from hangman_display import display_hangman
 
 
@@ -22,40 +21,40 @@ def start_game():
     # print the welcome message
     name = input("What is your name?\n")
     print(f"Hello, {name}")
-    if input('Would you like to play Hangman? (Y)').upper() == "Y":
-        select_difficulty() 
+    if input("Would you like to play Hangman?(Y)").upper() == "Y":
+        select_difficulty = ''
+        while True:
+            select_difficulty = input("Please enter difficulty level: E - easy, H - hard\n")
+            select_difficulty = select_difficulty.upper()
+            print("You have chosen: ", select_difficulty)
+            break
+        if select_difficulty == 'H':    
+            num_lives = 5
+            return num_lives
+            hangman()
+        else: 
+            hangman()   
     else:
-        print('Please try again.')
+        print("You need to enter a username to continue...\n")  
         start_game()
 
 
-
-def select_difficulty():
-    choice = ""
-    """Let the player pick and confirm a difficulty level."""
-    while choice not in ['E', 'H']:
-        choice = input("Please enter difficulty level: E - easy, H - hard\n>")
-        choice = choice.upper()
-    get_word(choice)
-
 # function to get random word from the list
-def get_word(choice):
+def get_word():
     """Picks a random word from words.py"""
-    if choice == 'H':
-        word = random.choice(diff_words)
-    else:
-        word = random.choice(words)
-    print(word)
-    hangman(word)
+    word = random.choice(words)
+    return word.upper()
+
 
 # function for game
-def hangman(word):
+def hangman():
     """Play the game"""
-    word_letters = set(word.upper())  # letters in word
+    word = get_word()
+    word_letters = set(word)  # letters in word
     alphabet = set(string.ascii_uppercase)
     used_letters = set()  # what the user has guessed
 
-    lives = 7
+    lives = num_lives
 
     # getting user input
     while len(word_letters) > 0 and lives > 0:
@@ -71,9 +70,6 @@ def hangman(word):
 
         user_letter = input('Guess a letter:\n').upper()
         if user_letter in alphabet - used_letters:
-            print(used_letters)
-            print(user_letter)
-            print(word_letters)
             used_letters.add(user_letter)
             if user_letter in word_letters:
                 word_letters.remove(user_letter)
@@ -91,7 +87,7 @@ def hangman(word):
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
         print(display_hangman[lives])
-        print('Sorry out of lives, your game is over. The word was', word)
+        print('You died, sorry. The word was', word)
         restart_game()
     else:
         print('You have guessed the word', word, '\n Congratulations!!')
@@ -108,11 +104,12 @@ def restart_game():
 
         if restart == "Y":
             game_restart = True
-            hangman(word)
+            hangman()
 
         elif restart == "N":
             game_restart = True
             print('Goodbye!')
+            start_game()
 
         else:
             print('You must select Y or N. Please try again.')

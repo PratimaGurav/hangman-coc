@@ -92,9 +92,7 @@ words = [
     'syria',
     'cairo',
     'ukraine',
-    'rome'
-]
-diff_words = [
+    'rome',
     'uzbekistan',
     'mongolia',
     'philippines',
