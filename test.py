@@ -104,7 +104,7 @@ def restart_game():
 
         if restart == "Y":
             game_restart = True
-            hangman()
+            hangman(word)
 
         elif restart == "N":
             game_restart = True

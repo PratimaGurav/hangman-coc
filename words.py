@@ -42,7 +42,7 @@ words = [
     'chile',
     'colombia',
     'ibiza',
-    'greece'
+    'greece',
     'santorini',
     'athens',
     'zurich',
@@ -58,7 +58,7 @@ words = [
     'turkey',
     'istanbul',
     'ethiopia',
-    'romania'
+    'romania',
     'poland',
     'austria',
     'dublin',
@@ -69,9 +69,9 @@ words = [
     'warsaw',
     'sweden',
     'stockholm',
-    'egypt'
+    'egypt',
     'nigeria',
-    'kenya'
+    'kenya',
     'jamaica',
     'namibia',
     'zimbabwe',
@@ -79,7 +79,7 @@ words = [
     'johannesburg',
     'venezuela',
     'toronto',
-    'canada'
+    'canada',
     'ottawa',
     'myanmar',
     'vietnam',
