@@ -29,11 +29,10 @@ def start_game():
             print("You have chosen: ", select_difficulty)
             break
         if select_difficulty == 'H':    
-            num_lives = 5
-            return num_lives
-            hangman()
+            lives = 5
+            hangman(lives)
         else: 
-            hangman()   
+            hangman(lives)   
     else:
         print("You need to enter a username to continue...\n")  
         start_game()
@@ -47,14 +46,14 @@ def get_word():
 
 
 # function for game
-def hangman():
+def hangman(lives):
     """Play the game"""
     word = get_word()
     word_letters = set(word)  # letters in word
     alphabet = set(string.ascii_uppercase)
     used_letters = set()  # what the user has guessed
 
-    lives = 7
+    remaining_lives = lives
 
     # getting user input
     while len(word_letters) > 0 and lives > 0:
@@ -65,7 +64,7 @@ def hangman():
         # what the current word is (ie W - R D)
         word_list = [
             letter if letter in used_letters else '_' for letter in word]
-        print(display_hangman[lives])
+        print(display_hangman[remaining_lives])
         print('Guess the word: ', ' '.join(word_list))
 
         user_letter = input('Guess a letter:\n').upper()
@@ -87,14 +86,14 @@ def hangman():
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
         print(display_hangman[lives])
-        print('You died, sorry. The word was', word)
-        restart_game(num_lives)
+        print('Game Over! The correct word was', word)
+        restart_game()
     else:
         print('You have guessed the word', word, '\n Congratulations!!')
-        restart_game(num_lives)
+        restart_game()
 
 
-def restart_game(num_lives):
+def restart_game():
     """ Gives player an option to restart, otherwise returns to title screen 
     """
     game_restart = False
@@ -109,8 +108,6 @@ def restart_game(num_lives):
         elif restart == "N":
             game_restart = True
             print('Goodbye!')
-            start_game()
-
         else:
             print('You must select Y or N. Please try again.')
 
