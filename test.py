@@ -45,12 +45,13 @@ def get_word(choice):
         word = random.choice(diff_words)
     else:
         word = random.choice(words)
+    print(word)
     hangman(word)
 
 # function for game
 def hangman(word):
     """Play the game"""
-    word_letters = set(word)  # letters in word
+    word_letters = set(word.upper())  # letters in word
     alphabet = set(string.ascii_uppercase)
     used_letters = set()  # what the user has guessed
 
@@ -70,6 +71,9 @@ def hangman(word):
 
         user_letter = input('Guess a letter:\n').upper()
         if user_letter in alphabet - used_letters:
+            print(used_letters)
+            print(user_letter)
+            print(word_letters)
             used_letters.add(user_letter)
             if user_letter in word_letters:
                 word_letters.remove(user_letter)
