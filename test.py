@@ -31,7 +31,8 @@ def start_game():
         if select_difficulty == 'H':    
             lives = 5
             hangman(lives)
-        else: 
+        else:
+            lives = 7 
             hangman(lives)   
     else:
         print("You need to enter a username to continue...\n")  
@@ -85,7 +86,7 @@ def hangman(lives):
 
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
-        print(display_hangman[lives])
+        print(display_hangman[remaining_lives])
         print('Game Over! The correct word was', word)
         restart_game()
     else:
