@@ -31,9 +31,9 @@ def start_game():
         if select_difficulty == 'H':    
             num_lives = 5
             return num_lives
-            hangman()
+            hangman(num_lives)
         else: 
-            hangman()   
+            hangman(num_lives)   
     else:
         print("You need to enter a username to continue...\n")  
         start_game()
@@ -47,7 +47,7 @@ def get_word():
 
 
 # function for game
-def hangman():
+def hangman(num_lives):
     """Play the game"""
     word = get_word()
     word_letters = set(word)  # letters in word
@@ -104,7 +104,7 @@ def restart_game():
 
         if restart == "Y":
             game_restart = True
-            hangman()
+            start_game()
 
         elif restart == "N":
             game_restart = True
