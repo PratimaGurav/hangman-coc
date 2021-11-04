@@ -31,9 +31,9 @@ def start_game():
         if select_difficulty == 'H':    
             num_lives = 5
             return num_lives
-            hangman(num_lives)
+            hangman()
         else: 
-            hangman(num_lives)   
+            hangman()   
     else:
         print("You need to enter a username to continue...\n")  
         start_game()
@@ -47,14 +47,14 @@ def get_word():
 
 
 # function for game
-def hangman(num_lives):
+def hangman():
     """Play the game"""
     word = get_word()
     word_letters = set(word)  # letters in word
     alphabet = set(string.ascii_uppercase)
     used_letters = set()  # what the user has guessed
 
-    lives = num_lives
+    lives = 7
 
     # getting user input
     while len(word_letters) > 0 and lives > 0:
@@ -114,8 +114,5 @@ def restart_game(num_lives):
         else:
             print('You must select Y or N. Please try again.')
 
-def main():
-     "main"
-     start_game()
-
-main()     
+if __name__ == "__main__":
+    start_game()
