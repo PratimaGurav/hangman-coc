@@ -16,12 +16,13 @@ def start_game():
         |  _  | (_| | | | | (_| | | | | | | (_| | | | |
         |_| |_|\\__,_|_| |_|\\__, |_| |_| |_|\\__,_|_| |_|
                             |___/
+        Can you guess the name of the Country / City?
         """
     )
     # print the welcome message
-    name = input("What is your name?\n")
+    name = input("Please enter your name\n :\n")
     print(f"Hello, {name}")
-    if input("Would you like to play Hangman?(Y)").upper() == "Y":
+    if input("Please press 'Y' to start the game\n :\n").upper() == "Y":
         select_difficulty = ''
         while True:
             select_difficulty = input("Please enter difficulty level: E - easy, H - hard\n")

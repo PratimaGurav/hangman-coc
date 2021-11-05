@@ -16,14 +16,25 @@ def start_game():
         |  _  | (_| | | | | (_| | | | | | | (_| | | | |
         |_| |_|\\__,_|_| |_|\\__, |_| |_| |_|\\__,_|_| |_|
                             |___/
-        Can you guess the name of Country / City?
+        Can you guess the name of the Country / City?
         """
     )
     # print the welcome message
-    name = input("What is your name?\n")
+    name = input("Please enter your name\n :\n")
     print(f"Hello, {name}")
-    if input("Would you like to play Hangman?(Y)").upper() == "Y":
-        hangman()  
+    if input("Please press 'Y' to start the game\n :\n").upper() == "Y":
+        select_difficulty = ''
+        while True:
+            select_difficulty = input("Please enter difficulty level: E - easy, H - hard\n")
+            select_difficulty = select_difficulty.upper()
+            print("You have chosen: ", select_difficulty)
+            break
+        if select_difficulty == 'H':    
+            lives = 5
+            hangman(lives)
+        else:
+            lives = 7 
+            hangman(lives)   
     else:
         print("You need to enter a username to continue...\n")  
         start_game()
@@ -37,14 +48,14 @@ def get_word():
 
 
 # function for game
-def hangman():
+def hangman(lives):
     """Play the game"""
     word = get_word()
     word_letters = set(word)  # letters in word
     alphabet = set(string.ascii_uppercase)
     used_letters = set()  # what the user has guessed
 
-    lives = 7
+    remaining_lives = lives
 
     # getting user input
     while len(word_letters) > 0 and lives > 0:
@@ -55,7 +66,7 @@ def hangman():
         # what the current word is (ie W - R D)
         word_list = [
             letter if letter in used_letters else '_' for letter in word]
-        print(display_hangman[lives])
+        print(display_hangman[remaining_lives])
         print('Guess the word: ', ' '.join(word_list))
 
         user_letter = input('Guess a letter:\n').upper()
@@ -76,8 +87,8 @@ def hangman():
 
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
-        print(display_hangman[lives])
-        print('You died, sorry. The word was', word)
+        print(display_hangman[remaining_lives])
+        print('Game Over! The correct word was', word)
         restart_game()
     else:
         print('You have guessed the word', word, '\n Congratulations!!')
@@ -94,13 +105,11 @@ def restart_game():
 
         if restart == "Y":
             game_restart = True
-            hangman()
+            start_game()
 
         elif restart == "N":
             game_restart = True
             print('Goodbye!')
-            start_game()
-
         else:
             print('You must select Y or N. Please try again.')
 
