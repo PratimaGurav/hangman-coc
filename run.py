@@ -18,6 +18,7 @@ def start_game():
                             |___/
         """
     )
+    print("Guess the name of Country / City")
     # print the welcome message
     name = input("What is your name?\n")
     print(f"Hello, {name}")
