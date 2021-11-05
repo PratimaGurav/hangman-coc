@@ -66,7 +66,7 @@ def hangman(lives):
         # what the current word is (ie W - R D)
         word_list = [
             letter if letter in used_letters else '_' for letter in word]
-        print(display_hangman[remaining_lives])
+        print(display_hangman[lives])
         print('Guess the word: ', ' '.join(word_list))
 
         user_letter = input('Guess a letter:\n>').upper()
