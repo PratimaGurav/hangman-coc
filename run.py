@@ -25,7 +25,8 @@ def start_game():
     if input("Please press 'Y' to start the game\n :\n").upper() == "Y":
         select_difficulty = ''
         while True:
-            select_difficulty = input("Please enter difficulty level: E - easy, H - hard\n")
+            select_difficulty = input("Select difficulty level"
+            "Please enter: E for Easy or H for Hard\n")
             select_difficulty = select_difficulty.upper()
             print("You have chosen: ", select_difficulty)
             break
