@@ -20,13 +20,12 @@ def start_game():
         """
     )
     # print the welcome message
-    name = input("Please enter your name\n:")
+    name = input("Please enter your name:\n>")
     print(f"Hello, {name}")
-    if input("Please press 'Y' to start the game\n:").upper() == "Y":
+    if input("Please press 'Y' to start the game:\n>").upper() == "Y":
         select_difficulty = ''
         while True:
-            select_difficulty = input("Select difficulty level"
-            "Please enter: E for Easy or H for Hard\n")
+            select_difficulty = input("Select difficulty level\nPlease enter E for Easy or H for Hard:\n>")
             select_difficulty = select_difficulty.upper()
             print("You have chosen: ", select_difficulty)
             break
@@ -70,7 +69,7 @@ def hangman(lives):
         print(display_hangman[remaining_lives])
         print('Guess the word: ', ' '.join(word_list))
 
-        user_letter = input('Guess a letter:\n').upper()
+        user_letter = input('Guess a letter:\n>').upper()
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
             if user_letter in word_letters:
