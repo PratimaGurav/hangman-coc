@@ -20,9 +20,9 @@ def start_game():
         """
     )
     # print the welcome message
-    name = input("Please enter your name\n :\n")
+    name = input("Please enter your name\n:")
     print(f"Hello, {name}")
-    if input("Please press 'Y' to start the game\n :\n").upper() == "Y":
+    if input("Please press 'Y' to start the game\n:").upper() == "Y":
         select_difficulty = ''
         while True:
             select_difficulty = input("Select difficulty level"
