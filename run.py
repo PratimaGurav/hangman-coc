@@ -16,9 +16,9 @@ def start_game():
         |  _  | (_| | | | | (_| | | | | | | (_| | | | |
         |_| |_|\\__,_|_| |_|\\__, |_| |_| |_|\\__,_|_| |_|
                             |___/
+        Can you guess the name of Country / City?
         """
     )
-    print("Guess the name of Country / City")
     # print the welcome message
     name = input("What is your name?\n")
     print(f"Hello, {name}")
