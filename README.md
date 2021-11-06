@@ -102,13 +102,19 @@
     
 ## Testing
 
-  
+ - ### Validation
+    [PEP8](http://pep8online.com/) was used to validate the code.
+    Following errors and warnings were found and fixed while validation:-
 
+    - ![run.py](assets/documents/pep8-error-run.jpg)
+    - ![words.py](assets/documents/pep8-error-words.jpg)
+    - ![hangman-display.py](assets/documents/pep8-error-display-hangman.jpg)
+      - Fixed : Added new line and shortened the print messages 
 
 
  - ### Further Testing
 
-   -   
+     
    
 
   - ### Known Bugs
