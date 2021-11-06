@@ -133,7 +133,16 @@
     - Navigate to "Settings". Scroll to "Config Vars" and select "Reveal Config Vars". Input the following. KEY: PORT, VALUE:8000. The project does not have any confidentail data hence no additional steps needed.
     - Then scroll and select "Buildpacks" and then click both "python" and "node.js"(node.js is needed for the mock terminal).
     - Ensure that the python buildpack is above the node.js buildpack, You can click and drag the packs to re-arrange them.
-    - 
+    
+  - Application Deployment
+    - Navigate to the "Deploy" section.
+    - Scroll down to "Deployment Method" and select "GitHub".
+    - Authorize the connection of Heroku and GitHub.
+    - Search for your GitHub repository name, and select the correct repository.
+    - For Deployment there are two options, Automatic Deployments or Manual.
+      - Automatic Deployment: This will prompt Heroku to re-build your app each time you push your code to GitHub.
+      - Manual Deployment: This will only prompt Heroku to build your app when you manually opt to do so.
+    - Ensure the correct branch is selected "master/Main", and select the deployment method that you desire. In this case, I will be using Automatic Deployment.
 
    
 
