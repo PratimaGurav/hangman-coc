@@ -108,5 +108,4 @@ words = [
     'switzerland',
     'singapore',
     'argentina',
-
 ]
