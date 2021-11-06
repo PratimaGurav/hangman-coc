@@ -119,7 +119,21 @@
 
  - ### GitHub Pages
 
-  The project was deployed via Heroku using the following steps...
+  The project was deployed via [Heroku](https://heroku.com/) using the following steps...
+
+  - Creating Application on Heroku.
+    - Ensure all codes are correct and ready for deployment.
+    - Log in to Heroku with your credentials.
+    - Navigate to the Dashboard.
+    - Click "New" and from the drop down menu select "create app". This is located on the upper right side of the window.
+    - Provide a name for your application which has to be unique and select your region.
+    - Click "Create App".
+
+  - Setting up the Application
+    - Navigate to "Settings". Scroll to "Config Vars" and select "Reveal Config Vars". Input the following. KEY: PORT, VALUE:8000. The project does not have any confidentail data hence no additional steps needed.
+    - Then scroll and select "Buildpacks" and then click both "python" and "node.js"(node.js is needed for the mock terminal).
+    - Ensure that the python buildpack is above the node.js buildpack, You can click and drag the packs to re-arrange them.
+    - 
 
    
 
