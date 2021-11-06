@@ -25,7 +25,8 @@ def start_game():
     if input("Please press 'Y' to start the game:\n>").upper() == "Y":
         select_difficulty = ''
         while True:
-            select_difficulty = input("Select difficulty level\nPlease enter E for Easy or H for Hard:\n>")
+            select_difficulty = input("Select difficulty level\n")
+            print("Please enter 'E' for Easy or 'H' for Hard:\n>")
             select_difficulty = select_difficulty.upper()
             print("You have chosen: ", select_difficulty)
             break
@@ -101,7 +102,7 @@ def restart_game():
     game_restart = False
 
     while not game_restart:
-        restart = input('Would you like to play Hangman again? (Y/N)\n').upper()
+        restart = input('Would you like to play again? (Y/N)\n').upper()
 
         if restart == "Y":
             game_restart = True
