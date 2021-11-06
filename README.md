@@ -114,6 +114,9 @@
 
  - ### Further Testing
 
+    - Friends and family members were asked to play the quiz and provide feedback.
+      - How to play the game was added as few members did not play hangman before.
+
      
    
 
