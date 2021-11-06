@@ -60,10 +60,7 @@
         1. I should find the game challenging with different difficulty levels.
         2. I should enjoy the game.   
 
-    -   #### Frequent User 
-        1. 
-        2. 
-
+    
 *   ### Design
 
     - [Code Logic Flowchart]
@@ -80,14 +77,16 @@
 
 - ### Future Enhancements 
 
-    - 
-    - 
+    - Add provision to display hint to user on request.
+    - Implement scoring system.
+    - Implement a timer to guess each letter.
 
 ## Technologies Used
 
 - ### Languages Used
 
   -   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+  -   [MARKDOWN](https://en.wikipedia.org/wiki/Markdown)
 
 
 - ### Frameworks, Libraries & Programs Used
@@ -99,6 +98,8 @@
     - GitHub is used to store the projects code after being pushed from Git.   
   - [Lucidchart:](https://www.lucidchart.com/)
     - Lucidchart was used to create the flowchart during the inital phase.
+  - [Heroku](https://heroku.com/)
+    - Heroku applicaiton was used to deploy the project.  
     
 ## Testing
 
@@ -109,15 +110,15 @@
     - ![run.py](assets/documents/pep8-error-run.jpg)
     - ![words.py](assets/documents/pep8-error-words.jpg)
     - ![hangman-display.py](assets/documents/pep8-error-display-hangman.jpg)
-      - Fixed : Added new line and shortened the print messages 
+      - Fixed : Added new lines and shortened the print messages 
 
 
  - ### Further Testing
 
     - Friends and family members were asked to play the quiz and provide feedback.
-      - How to play the game was added as few members did not play hangman before.
+      - How to play the game was added as few members were mot aware of playing hangman digitaly.
 
-     
+    
    
 
   - ### Known Bugs
@@ -130,7 +131,7 @@
 
   The project was deployed via [Heroku](https://heroku.com/) using the following steps...
 
-  - Creating Application on Heroku.
+  - Creating Application on Heroku:
     - Ensure all codes are correct and ready for deployment.
     - Log in to Heroku with your credentials.
     - Navigate to the Dashboard.
@@ -138,12 +139,12 @@
     - Provide a name for your application which has to be unique and select your region.
     - Click "Create App".
 
-  - Setting up the Application
+  - Setting up the Application:
     - Navigate to "Settings". Scroll to "Config Vars" and select "Reveal Config Vars". Input the following. KEY: PORT, VALUE:8000. The project does not have any confidentail data hence no additional steps needed.
     - Then scroll and select "Buildpacks" and then click both "python" and "node.js"(node.js is needed for the mock terminal).
     - Ensure that the python buildpack is above the node.js buildpack, You can click and drag the packs to re-arrange them.
     
-  - Application Deployment
+  - Application Deployment:
     - Navigate to the "Deploy" section.
     - Scroll down to "Deployment Method" and select "GitHub".
     - Authorize the connection of Heroku and GitHub.
