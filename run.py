@@ -25,19 +25,19 @@ def start_game():
     if input("Please press 'Y' to start the game:\n>").upper() == "Y":
         select_difficulty = ''
         while True:
-            select_difficulty = input("Select difficulty level\n")
-            print("Please enter 'E' for Easy or 'H' for Hard:\n>")
+            select_difficulty = print("Select difficulty level\n")
+            input("Please enter 'E' for Easy or 'H' for Hard:\n>")
             select_difficulty = select_difficulty.upper()
             print("You have chosen: ", select_difficulty)
             break
-        if select_difficulty == 'H':    
+        if select_difficulty == 'H':
             lives = 5
             hangman(lives)
         else:
-            lives = 7 
-            hangman(lives)   
+            lives = 7
+            hangman(lives)
     else:
-        print("You need to enter a username to continue...\n")  
+        print("You need to enter a username to continue...\n")
         start_game()
 
 
@@ -97,7 +97,7 @@ def hangman(lives):
 
 
 def restart_game():
-    """ Gives player an option to restart, otherwise returns to title screen 
+    """ Gives player an option to restart, otherwise returns to title screen
     """
     game_restart = False
 
@@ -114,5 +114,4 @@ def restart_game():
         else:
             print('You must select Y or N. Please try again.')
 
-if __name__ == "__main__":
-    start_game()
+start_game()
