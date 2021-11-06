@@ -19,6 +19,19 @@ def start_game():
         Can you guess the name of the Country / City?
         """
     )
+    print(
+        """
+        How to play:
+        Enter username to start the game.
+        Select difficulty level either Easy or Hard.
+        The game starts with an aim to guess the hidden word.
+        If you guess correct the _ is replaced with the letter
+        or one life is deducted and hangman starts building.
+        Game is over either when you have correctly guessed the word or
+        when you have run out of lives.
+        Good Luck!
+        """
+    )
     # print the welcome message
     name = input("Please enter your name:\n>")
     print(f"Hello, {name}")
