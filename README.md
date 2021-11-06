@@ -1,4 +1,4 @@
-# Hangman_CoC (Country or City)
+# Hangman-CoC (Country or City)
 
 ## Code Institute: Milestone Project 3
 
@@ -29,7 +29,7 @@
 ## User Experience (UX)
 
 -   ### Introduction
-     Hangman_CoC is a Python based game, which runs in the Code Institue mock terminal on Heroku.
+     Hangman-CoC is a Python based game, which runs in the Code Institue mock terminal on Heroku.
      It is a challenging word search game involving user interaction to guess a word which would be a name of a country or a city. The game has two difficulty levels which users can select at the start of the game. Users have to guess the letters of the hidden word with limited number of lives which vary based on the difficulty level. Each wrong guess takes away one life. The game is over either when the user has correctly guessed the word or there are no lives remaining.
      
 -   ### How to Play
