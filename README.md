@@ -149,13 +149,13 @@
 
  - ### Making a Local Clone
 
-    1. Log in to GitHub and navigate to the [GitHub Repository]
+    1. Log in to GitHub and navigate to the [GitHub Repository](https://github.com/PratimaGurav/hangman-coc)
     2. To clone the repository using HTTPS, click Code and copy the address. 
-    ![Clone Repository]
+    ![Clone Repository](assets/documents/git-clone.jpg)
     3. Navigate to Git Bash and clone the repository. 
-    ![Clone-Command]
+    ![Clone-Command](assets/documents/git-clone-command.jpg)
     4. Press Enter and your local clone will be created. 
-    ![Clone-Output]
+    ![Clone-Output](assets/documents/git-clone-output.jpg)
 
 ## Credits
 
