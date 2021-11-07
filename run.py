@@ -51,7 +51,7 @@ def start_game():
 
     name = input("Please enter your name:\n>")
     if name == "":
-        print("You need to enter a username to continue...\n>")
+        print(tcolors.WARNING + "You need to enter a username to continue...\n>" + tcolors.WHITE)
         start_game()
     else:
        print(f"Hello, {name}")
@@ -112,7 +112,7 @@ def hangman(lives):
 
             else:
                 lives = lives - 1  # takes away a life if wrong
-                print('Letter is not in word.')
+                print(tcolors.WARNING + 'Letter is not in word.'+ tcolors.WHITE)
 
         elif user_letter in used_letters:
             print(tcolors.WARNING + 'You have already used that character. Please try again.' + tcolors.WHITE)
