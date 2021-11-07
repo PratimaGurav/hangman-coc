@@ -3,6 +3,13 @@ import string
 from words import words
 from hangman_display import display_hangman
 
+class tcolors:
+    GREEN = '\033[92m'
+    RED = '\033[91m'
+    WARNING = '\033[93m'
+    BLUE = '\033[94m'
+    BOLD = '\033[1m'
+
 
 def start_game():
     """
@@ -48,7 +55,7 @@ def start_game():
             lives = 7
             hangman(lives)
     else:
-        print("You need to enter a username to continue...\n")
+        print(tcolors.WARNING + "You need to enter a username to continue...\n")
         start_game()
 
 
