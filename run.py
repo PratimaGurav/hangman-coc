@@ -16,20 +16,18 @@ def start_game():
         |  _  | (_| | | | | (_| | | | | | | (_| | | | |
         |_| |_|\\__,_|_| |_|\\__, |_| |_| |_|\\__,_|_| |_|
                             |___/
-        Can you guess the name of the Country / City?
         """
     )
     print(
         """
-        How to play:
-        Enter username to start the game.
-        Select difficulty level either Easy or Hard.
-        The game starts with an aim to guess the hidden word.
-        If you guess correct the _ is replaced with the letter
-        or one life is deducted and hangman starts building.
-        Game is over either when you have correctly guessed the word or
-        when you have run out of lives.
-        Good Luck!
+         How to play:
+       * Enter username to start the game.
+       * Select difficulty level either Easy or Hard.
+       * Guess the hidden name of the Country/City represented by _ _ _ _
+       * On each incorrect guess one life is deducted & hangman starts building
+       * Game is over either when you have correctly guessed the word
+       * Or when you have run out of lives.
+       * Good Luck!
         """
     )
     # print the welcome message
