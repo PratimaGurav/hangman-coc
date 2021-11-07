@@ -11,19 +11,19 @@
 [Click here to view the repository.]
 
 ## Table of Contents:
-- [User Experience (UX)]  
+- [User Experience (UX)](https://github.com/PratimaGurav/hangman-coc#user-experience-ux)  
 
-- [Features]
+- [Features](https://github.com/PratimaGurav/hangman-coc#features)
 
-- [Technologies Used]
+- [Technologies Used](https://github.com/PratimaGurav/hangman-coc#technologies-used)
   
-- [Testing]
+- [Testing](https://github.com/PratimaGurav/hangman-coc#testing)
 
-- [Deployment]
+- [Deployment](https://github.com/PratimaGurav/hangman-coc#deployment)
 
-- [Credits]
+- [Credits](https://github.com/PratimaGurav/hangman-coc#credits)
 
-- [Acknowledgements]
+- [Acknowledgements](https://github.com/PratimaGurav/hangman-coc#acknowledgements)
     
 
 ## User Experience (UX)
@@ -184,4 +184,4 @@
   -   Slack community and my fellow slackers for being available at any given time of the day.
 
 
-## [BACK TO TOP]
+## [BACK TO TOP](https://github.com/PratimaGurav/hangman-coc#hangman-coc-country-or-city)
