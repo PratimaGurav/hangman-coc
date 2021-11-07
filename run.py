@@ -25,7 +25,7 @@ def title_msg():
         |  _  | (_| | | | | (_| | | | | | | (_| | | | |
         |_| |_|\\__,_|_| |_|\\__, |_| |_| |_|\\__,_|_| |_|
                             |___/
-        """+ tcolors.BLUE +
+        """ + tcolors.BLUE +
         """
         How to play:
        * Enter username to start the game.
@@ -35,7 +35,7 @@ def title_msg():
        * Game is over either when you have correctly guessed the word
        * Or when you have run out of lives.
        * Good Luck!
-        """+ tcolors.WHITE
+        """ + tcolors.WHITE
     )
 
 
@@ -49,8 +49,7 @@ def start_game():
 
     name = input("Please enter your name:\n>")
     if name == "":
-        print(tcolors.WARNING + "You need to enter a username to continue...\n>" +
-            tcolors.WHITE)
+        print(tcolors.WARNING + "Please enter a username\n>" + tcolors.WHITE)
         start_game()
     else:
        print(f"Hello, {name}")
@@ -132,8 +131,8 @@ def hangman(lives):
             tcolors.WHITE)
         restart_game()
     else:
-        print(tcolors.GREEN + 'You have correctly guessed the word', word,
-            '\n Congratulations!!' + tcolors.WHITE)
+        print(tcolors.GREEN + "You have correctly guessed the word', word,
+            "\nCongratulations!!" + tcolors.WHITE)
         restart_game()
 
 
