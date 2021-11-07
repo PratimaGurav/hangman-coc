@@ -73,7 +73,7 @@ def select_difficulty():
         hangman(lives)
     else:
         print(tcolors.WARNING + "You must select E or H. Please try again\n"
-        + tcolors.WHITE)
+            + tcolors.WHITE)
         select_difficulty()
 
 
