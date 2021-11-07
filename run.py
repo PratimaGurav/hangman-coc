@@ -3,13 +3,6 @@ import string
 from words import words
 from hangman_display import display_hangman
 
-class tcolors:
-    GREEN = '\033[92m'
-    RED = '\033[91m'
-    WARNING = '\033[93m'
-    BLUE = '\033[94m'
-    BOLD = '\033[1m'
-
 
 def start_game():
     """
@@ -23,18 +16,7 @@ def start_game():
         |  _  | (_| | | | | (_| | | | | | | (_| | | | |
         |_| |_|\\__,_|_| |_|\\__, |_| |_| |_|\\__,_|_| |_|
                             |___/
-        """
-    )
-    print(
-        """
-         How to play:
-       * Enter username to start the game.
-       * Select difficulty level either Easy or Hard.
-       * Guess the hidden name of the Country/City represented by _ _ _ _
-       * On each incorrect guess one life is deducted & hangman starts building
-       * Game is over either when you have correctly guessed the word
-       * Or when you have run out of lives.
-       * Good Luck!
+        Can you guess the name of the Country / City?
         """
     )
     # print the welcome message
@@ -43,19 +25,20 @@ def start_game():
     if input("Please press 'Y' to start the game:\n>").upper() == "Y":
         select_difficulty = ''
         while True:
-            select_difficulty = print("Select difficulty level.")
-            input("Please enter 'E' for Easy or 'H' for Hard:\n>")
+            select_difficulty = input("Select difficulty level\nPlease enter E for Easy or H for Hard:\n>")
             select_difficulty = select_difficulty.upper()
             print("You have chosen: ", select_difficulty)
             break
         if select_difficulty == 'H':
             lives = 5
             hangman(lives)
-        else:
+        elif select_difficulty == 'E':
             lives = 7
             hangman(lives)
+        else:
+            print("Please select difficulty level\n")
     else:
-        print(tcolors.WARNING + "You need to enter a username to continue...\n")
+        print("You need to enter a username to continue...\n")  
         start_game()
 
 
@@ -115,12 +98,12 @@ def hangman(lives):
 
 
 def restart_game():
-    """ Gives player an option to restart, otherwise returns to title screen
+    """ Gives player an option to restart, otherwise returns to title screen 
     """
     game_restart = False
 
     while not game_restart:
-        restart = input('Would you like to play again? (Y/N)\n').upper()
+        restart = input('Would you like to play Hangman again? (Y/N)\n').upper()
 
         if restart == "Y":
             game_restart = True
@@ -132,5 +115,5 @@ def restart_game():
         else:
             print('You must select Y or N. Please try again.')
 
-
-start_game()
+if __name__ == "__main__":
+    start_game()
