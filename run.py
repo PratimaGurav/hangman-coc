@@ -3,6 +3,14 @@ import string
 from words import words
 from hangman_display import display_hangman
 
+class tcolors:
+    GREEN = '\033[92m'
+    RED = '\033[91m'
+    WARNING = '\033[93m'
+    BLUE = '\033[94m'
+    WHITE = '\033[0m'
+    BOLD = '\033[1m'
+
 
 def title_msg():
     """
@@ -18,7 +26,7 @@ def title_msg():
                             |___/
         """
     )
-    print(
+    print(tcolors.BLUE +
         """
         How to play:
        * Enter username to start the game.
@@ -29,6 +37,7 @@ def title_msg():
        * Or when you have run out of lives.
        * Good Luck!
         """
+        + tcolors.WHITE
     )
 
 
