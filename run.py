@@ -61,7 +61,7 @@ def select_difficulty():
     """
     Let player set difficulty
     """ 
-    selected_difficulty = input("Select difficulty level"
+    selected_difficulty = input("Select difficulty level\n"
         "Please enter E for Easy or H for Hard:\n>")
     selected_difficulty = selected_difficulty.upper()
     print("You have chosen: ", selected_difficulty)
