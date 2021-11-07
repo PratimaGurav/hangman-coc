@@ -104,6 +104,10 @@
     
 ## Testing
 
+  - ### Bugs
+
+
+
  - ### Validation
     [PEP8](http://pep8online.com/) was used to validate the code.
     Following errors were found and fixed while validation:-
@@ -169,14 +173,14 @@
 ## Credits
 
   - ### Code
-    
-
-  - ### Content
+    - Love-Sandwiches walk through project was referred throughout the project for better understanding.
+    - Stack Overflow was referred to add [colored text](https://stackoverflow.com/questions/287871/how-to-print-colored-text-to-the-terminal) to be printed to the terminal.
     
 
 ## Acknowledgements
 
   -   My Mentor for continuous helpful feedback and advises.
+  -   All the tutors (Scott, Ed and Igor) for helping me understand and fix few bugs.
   -   Slack community and my fellow slackers for being available at any given time of the day.
 
 
