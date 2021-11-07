@@ -51,7 +51,7 @@ def select_difficulty():
         lives = 7
         hangman(lives)
     else:
-        print("Please select difficulty level\n")
+        print("\n")
         select_difficulty()
 
 
