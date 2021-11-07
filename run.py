@@ -49,7 +49,7 @@ def start_game():
 
     name = input("Please enter your name:\n>")
     if name == "":
-        print(tcolors.WARN + "Please enter a username\n>" + tcolors.WHITE)
+        print(tcolors.WARN + "Please enter a name\n>" + tcolors.WHITE)
         start_game()
     else:
         print(f"Hello, {name}")
@@ -117,7 +117,7 @@ def hangman(lives):
             print(tcolors.WARN + "You have already used that character."
                   "Please try again." + tcolors.WHITE)
         else:
-            print(tcolors.WARN + 'Invalid letter. Please try again.' +
+            print(tcolors.WARN + "Invalid letter. Please try again." +
                   tcolors.WHITE)
 
     # gets here when len(word_letters) == 0 or when lives == 0
