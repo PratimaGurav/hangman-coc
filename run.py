@@ -52,8 +52,8 @@ def start_game():
         print(tcolors.WARNING + "Please enter a username\n>" + tcolors.WHITE)
         start_game()
     else:
-       print(f"Hello, {name}")
-       select_difficulty()
+        print(f"Hello, {name}")
+        select_difficulty()
 
 
 def select_difficulty():
