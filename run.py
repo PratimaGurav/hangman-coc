@@ -72,7 +72,8 @@ def select_difficulty():
         lives = 7
         hangman(lives)
     else:
-        print("\n")
+        print(tcolors.WARNING + "You must select E or H. Please try again\n"
+        + tcolors.WHITE)
         select_difficulty()
 
 
@@ -121,7 +122,7 @@ def hangman(lives):
                 "Please try again." + tcolors.WHITE)
 
         else:
-            print(tcolors.WARNING + 'Invalid character. Please try again.' 
+            print(tcolors.WARNING + 'Invalid letter. Please try again.' 
                 + tcolors.WHITE)
 
     # gets here when len(word_letters) == 0 or when lives == 0
@@ -149,9 +150,11 @@ def restart_game():
 
         elif restart == "N":
             game_restart = True
-            print(tcolors.BLUE + 'Thank You for playing Hangman-CoC.Goodbye!'+ tcolors.WHITE)
+            print(tcolors.BLUE + 'Thank You for playing Hangman-CoC. Goodbye!'
+                + tcolors.WHITE)
         else:
-            print(tcolors.WARNING + 'You must select Y or N. Please try again.'+ tcolors.WHITE)
+            print(tcolors.WARNING + 'You must select Y or N. Please try again.'
+                + tcolors.WHITE)
 
 if __name__ == "__main__":
     start_game()
