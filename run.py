@@ -61,7 +61,8 @@ def select_difficulty():
     """
     Let player set difficulty
     """ 
-    selected_difficulty = input("Please enter E for Easy or H for Hard for difficulty:\n>")
+    selected_difficulty = input("Select difficulty level"
+        "Please enter E for Easy or H for Hard:\n>")
     selected_difficulty = selected_difficulty.upper()
     print("You have chosen: ", selected_difficulty)
     if selected_difficulty == 'H':
@@ -112,18 +113,22 @@ def hangman(lives):
 
             else:
                 lives = lives - 1  # takes away a life if wrong
-                print(tcolors.WARNING + 'Letter is not in word.'+ tcolors.WHITE)
+                print(tcolors.WARNING + 'Letter is not in word.'
+                    + tcolors.WHITE)
 
         elif user_letter in used_letters:
-            print(tcolors.WARNING + 'You have already used that character. Please try again.' + tcolors.WHITE)
+            print(tcolors.WARNING + "You have already used that character." 
+                "Please try again." + tcolors.WHITE)
 
         else:
-            print(tcolors.WARNING + 'Invalid character. Please try again.' + tcolors.WHITE)
+            print(tcolors.WARNING + 'Invalid character. Please try again.' 
+                + tcolors.WHITE)
 
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
         print(display_hangman[remaining_lives])
-        print(tcolors.RED + 'Game Over! The correct word was' + tcolors.WHITE + , word)
+        print(tcolors.RED + 'Game Over! The correct word was', word 
+            + tcolors.WHITE)
         restart_game()
     else:
         print(tcolors.GREEN + 'You have correctly guessed the word', word, '\n Congratulations!!' + tcolors.WHITE)
