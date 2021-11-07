@@ -116,21 +116,20 @@ def hangman(lives):
 
         elif user_letter in used_letters:
             print(tcolors.WARN + "You have already used that character."
-                "Please try again." + tcolors.WHITE)
-
+                  "Please try again." + tcolors.WHITE)
         else:
             print(tcolors.WARN + 'Invalid letter. Please try again.' +
-                 tcolors.WHITE)
+                  tcolors.WHITE)
 
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
         print(display_hangman[remaining_lives])
         print(tcolors.RED + 'Game Over! The correct word was', word +
-            tcolors.WHITE)
+              tcolors.WHITE)
         restart_game()
     else:
         print(tcolors.GREEN + "You have correctly guessed the word", word,
-            "\nCongratulations!!" + tcolors.WHITE)
+              "\nCongratulations!!" + tcolors.WHITE)
         restart_game()
 
 
@@ -141,7 +140,7 @@ def restart_game():
 
     while not game_restart:
         restart = input(tcolors.BOLD + "Would you like to play Hangman again?"
-            "(Y/N)\n").upper()
+                        "(Y/N)\n").upper()
 
         if restart == "Y":
             game_restart = True
@@ -150,10 +149,10 @@ def restart_game():
         elif restart == "N":
             game_restart = True
             print(tcolors.BLUE + "Thank You for playing Hangman-CoC."
-                "Goodbye!" + tcolors.WHITE)
+                  "Goodbye!" + tcolors.WHITE)
         else:
             print(tcolors.WARN + "You must select Y or N."
-                "Please try again." + tcolors.WHITE)
+                  "Please try again." + tcolors.WHITE)
 
 if __name__ == "__main__":
     start_game()
