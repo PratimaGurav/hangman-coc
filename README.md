@@ -98,7 +98,9 @@
   - [Lucidchart:](https://www.lucidchart.com/)
     - Lucidchart was used to create the flowchart during the inital phase.
   - [Heroku](https://heroku.com/)
-    - Heroku applicaiton was used to deploy the project.  
+    - Heroku applicaiton was used to deploy the project.
+  - [ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Standard&t=Hangman)
+    - ASCII Art Generator was used to generate text for the title.    
     
 ## Testing
 
