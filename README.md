@@ -8,7 +8,7 @@
 
 [Click here to view the live project.]
 
-[Click here to view the repository.]
+[Click here to view the repository.](https://github.com/PratimaGurav/hangman-coc)
 
 ## Table of Contents:
 - [User Experience (UX)](https://github.com/PratimaGurav/hangman-coc#user-experience-ux)  
@@ -156,9 +156,7 @@
       - Automatic Deployment: This will prompt Heroku to re-build your app each time you push your code to GitHub.
       - Manual Deployment: This will only prompt Heroku to build your app when you manually opt to do so.
     - Ensure the correct branch is selected "master/Main", and select the deployment method that you desire. In this case, I will be using Automatic Deployment.
-
-   
-
+ 
 
  - ### Making a Local Clone
 
