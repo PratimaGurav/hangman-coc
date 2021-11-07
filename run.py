@@ -60,14 +60,13 @@ def select_difficulty():
     """
     Let player set difficulty
     """
-    selected_difficulty = print("Select difficulty level")
-    input("Please enter E for Easy or H for Hard:\n>")
-    selected_difficulty = selected_difficulty.upper()
-    print("You have chosen: ", selected_difficulty)
-    if selected_difficulty == 'H':
+    selected_diff = input("Select difficulty, enter E -Easy or H -Hard:\n>")
+    selected_diff = selected_diff.upper()
+    print("You have chosen: ", selected_diff)
+    if selected_diff == 'H':
         lives = 5
         hangman(lives)
-    elif selected_difficulty == 'E':
+    elif selected_diff == 'E':
         lives = 7
         hangman(lives)
     else:
