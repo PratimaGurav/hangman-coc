@@ -60,7 +60,7 @@ def select_difficulty():
     """
     Let player set difficulty
     """
-    selected_diff = input("Select difficulty, enter E -Easy or H -Hard:\n>")
+    selected_diff = input("Select difficulty\nEnter E -Easy or H -Hard:\n>")
     selected_diff = selected_diff.upper()
     print("You have chosen: ", selected_diff)
     if selected_diff == 'H':
