@@ -119,7 +119,7 @@ def hangman(lives):
                 "Please try again." + tcolors.WHITE)
 
         else:
-            print(tcolors.WARN + 'Invalid letter. Please try again.'+
+            print(tcolors.WARN + 'Invalid letter. Please try again.' +
                  tcolors.WHITE)
 
     # gets here when len(word_letters) == 0 or when lives == 0
