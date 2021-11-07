@@ -41,20 +41,18 @@ def select_difficulty():
     """
     Let player set difficulty
     """ 
-    while True:
-        select_difficulty = input("Select difficulty level\nPlease enter E for Easy or H for Hard:\n>")
-        select_difficulty = select_difficulty.upper()
-        print("You have chosen: ", select_difficulty)
-        if select_difficulty == 'H':
-            lives = 5
-            hangman(lives)
-        elif select_difficulty == 'E':
-            lives = 7
-            hangman(lives)
-        else:
-            print("Please select difficulty level\n")
-            select_difficulty()
-        break  
+    selected_difficulty = input("Select difficulty level\nPlease enter E for Easy or H for Hard:\n>")
+    selected_difficulty = selected_difficulty.upper()
+    print("You have chosen: ", selected_difficulty)
+    if selected_difficulty == 'H':
+        lives = 5
+        hangman(lives)
+    elif selected_difficulty == 'E':
+        lives = 7
+        hangman(lives)
+    else:
+        print("Please select difficulty level\n")
+        select_difficulty()
 
 
 # function to get random word from the list
