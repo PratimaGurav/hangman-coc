@@ -60,8 +60,8 @@ def select_difficulty():
     """
     Let player set difficulty
     """
-    selected_difficulty = input("Select difficulty level\n"
-        "Please enter E for Easy or H for Hard:\n>")
+    selected_difficulty = print("Select difficulty level")
+    input("Please enter E for Easy or H for Hard:\n>")
     selected_difficulty = selected_difficulty.upper()
     print("You have chosen: ", selected_difficulty)
     if selected_difficulty == 'H':
@@ -71,8 +71,7 @@ def select_difficulty():
         lives = 7
         hangman(lives)
     else:
-        print(tcolors.WARNING + "You must select E or H. Please try again\n"+
-            tcolors.WHITE)
+        print(tcolors.WARNING + "Please select E or H\n" + tcolors.WHITE)
         select_difficulty()
 
 
@@ -131,7 +130,7 @@ def hangman(lives):
             tcolors.WHITE)
         restart_game()
     else:
-        print(tcolors.GREEN + "You have correctly guessed the word', word,
+        print(tcolors.GREEN + "You have correctly guessed the word", word,
             "\nCongratulations!!" + tcolors.WHITE)
         restart_game()
 
