@@ -124,7 +124,7 @@ def restart_game():
 
         elif restart == "N":
             game_restart = True
-            print('Goodbye!')
+            print('Thank You for playing Hangman-CoC.Goodbye!')
         else:
             print('You must select Y or N. Please try again.')
 
