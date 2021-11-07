@@ -7,7 +7,7 @@ from hangman_display import display_hangman
 class tcolors:
     GREEN = '\033[92m'
     RED = '\033[91m'
-    WARNING = '\033[93m'
+    WARN = '\033[93m'
     BLUE = '\033[94m'
     WHITE = '\033[0m'
     BOLD = '\033[1m'
@@ -49,7 +49,7 @@ def start_game():
 
     name = input("Please enter your name:\n>")
     if name == "":
-        print(tcolors.WARNING + "Please enter a username\n>" + tcolors.WHITE)
+        print(tcolors.WARN + "Please enter a username\n>" + tcolors.WHITE)
         start_game()
     else:
         print(f"Hello, {name}")
@@ -71,7 +71,7 @@ def select_difficulty():
         lives = 7
         hangman(lives)
     else:
-        print(tcolors.WARNING + "Please select E or H\n" + tcolors.WHITE)
+        print(tcolors.WARN + "Please select E or H\n" + tcolors.WHITE)
         select_difficulty()
 
 
@@ -112,15 +112,14 @@ def hangman(lives):
 
             else:
                 lives = lives - 1  # takes away a life if wrong
-                print(tcolors.WARNING + "Letter is not in word."+
-                    tcolors.WHITE)
+                print(tcolors.WARN + "Letter is not in word" + tcolors.WHITE)
 
         elif user_letter in used_letters:
-            print(tcolors.WARNING + "You have already used that character."
+            print(tcolors.WARN + "You have already used that character."
                 "Please try again." + tcolors.WHITE)
 
         else:
-            print(tcolors.WARNING + 'Invalid letter. Please try again.'+
+            print(tcolors.WARN + 'Invalid letter. Please try again.'+
                  tcolors.WHITE)
 
     # gets here when len(word_letters) == 0 or when lives == 0
@@ -153,7 +152,7 @@ def restart_game():
             print(tcolors.BLUE + "Thank You for playing Hangman-CoC."
                 "Goodbye!" + tcolors.WHITE)
         else:
-            print(tcolors.WARNING + "You must select Y or N."
+            print(tcolors.WARN + "You must select Y or N."
                 "Please try again." + tcolors.WHITE)
 
 if __name__ == "__main__":
