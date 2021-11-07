@@ -75,11 +75,10 @@
 
  
 
-- ### Future Enhancements 
-
-    - Add provision to display hint to user on request.
-    - Implement scoring system.
-    - Implement a timer to guess each letter.
+### Future Enhancements 
+  - Add provision to display hint to user on request.
+  - Implement scoring system.
+  - Implement a timer to guess each letter.
 
 ## Technologies Used
 
@@ -107,10 +106,12 @@
     [PEP8](http://pep8online.com/) was used to validate the code.
     Following errors and warnings were found and fixed while validation:-
 
-    - ![run.py](assets/documents/pep8-error-run.jpg)
-    - ![words.py](assets/documents/pep8-error-words.jpg)
-    - ![hangman-display.py](assets/documents/pep8-error-display-hangman.jpg)
-      - Fixed : Added new lines and shortened the print messages 
+    Error & Warnings:
+    - [run.py](assets/documents/pep8-error-run.jpg)
+    - [words.py](assets/documents/pep8-error-words.jpg)
+    - [hangman-display.py](assets/documents/pep8-error-display-hangman.jpg)
+      
+    Fixed : Added new lines and shortened the print messages. 
 
 
  - ### Further Testing
