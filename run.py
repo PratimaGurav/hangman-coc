@@ -23,23 +23,30 @@ def start_game():
     name = input("Please enter your name:\n>")
     print(f"Hello, {name}")
     if input("Please press 'Y' to start the game:\n>").upper() == "Y":
-        select_difficulty = ''
-        while True:
-            select_difficulty = input("Select difficulty level\nPlease enter E for Easy or H for Hard:\n>")
-            select_difficulty = select_difficulty.upper()
-            print("You have chosen: ", select_difficulty)
-            break
-        if select_difficulty == 'H':
-            lives = 5
-            hangman(lives)
-        elif select_difficulty == 'E':
-            lives = 7
-            hangman(lives)
-        else:
-            print("Please select difficulty level\n")
+        select_difficulty()        
     else:
         print("You need to enter a username to continue...\n")  
         start_game()
+
+
+def select_difficulty(): ''
+    """
+    Select difficulty level
+    """    
+    while True:
+        select_difficulty = input("Select difficulty level\nPlease enter E for Easy or H for Hard:\n>")
+        select_difficulty = select_difficulty.upper()
+        print("You have chosen: ", select_difficulty)
+        break
+    if select_difficulty == 'H':
+            lives = 5
+            hangman(lives)
+    elif select_difficulty == 'E':
+            lives = 7
+            hangman(lives)
+    else:
+        print("Please select difficulty level\n")
+        select_difficulty()
 
 
 # function to get random word from the list
