@@ -4,9 +4,9 @@ from words import words
 from hangman_display import display_hangman
 
 
-def start_game():
+def title_msg():
     """
-    Function for logo
+    Function for title 
     """
     print(
         """
@@ -18,35 +18,43 @@ def start_game():
                             |___/
         Can you guess the name of the Country / City?
         """
-    )
-    # print the welcome message
-    name = input("Please enter your name:\n>")
-    print(f"Hello, {name}")
-    if input("Please press 'Y' to start the game:\n>").upper() == "Y":
-        select_difficulty()        
-    else:
-        print("You need to enter a username to continue...\n")  
-        start_game()
+    )  
 
 
-def select_difficulty(): ''
+def start_game():
     """
-    Select difficulty level
-    """    
+    Starts the game, retreives username and
+    option to select difficulty levels.
+    """
+    # print the welcome message
+    title_msg()
+
+    name = input("Please enter your name:\n>")
+    if name == "":
+        print("You need to enter a username to continue...\n>")
+        start_game()
+    else:
+       print(f"Hello, {name}")
+       select_difficulty()        
+
+def select_difficulty():
+    """
+    Let player set difficulty
+    """ 
     while True:
         select_difficulty = input("Select difficulty level\nPlease enter E for Easy or H for Hard:\n>")
         select_difficulty = select_difficulty.upper()
         print("You have chosen: ", select_difficulty)
-        break
-    if select_difficulty == 'H':
+        if select_difficulty == 'H':
             lives = 5
             hangman(lives)
-    elif select_difficulty == 'E':
+        elif select_difficulty == 'E':
             lives = 7
             hangman(lives)
-    else:
-        print("Please select difficulty level\n")
-        select_difficulty()
+        else:
+            print("Please select difficulty level\n")
+            select_difficulty()
+        break  
 
 
 # function to get random word from the list
