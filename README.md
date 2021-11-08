@@ -105,16 +105,28 @@
 ## Testing
 
   - ### Bugs
-    1. Game continues with blank username.
+    1. Game continues with blank username
       - Step to reproduce: 
         - Start the game.
-        - Enter blank username and press enter.
+        - Enter blank username and continue.
         - Game will procced to next level without any error message. 
            - [Error Screenshot](assets/images/bug-no-name.jpg)
       - Fix:
-        - This was fixed by creating a separate for title message, input username.
+        - This was fixed by creating a separate function for title message and input username.
         - Additionally if-else statement was added to check if blank username was entered.
           - [Fixed Screenshot](assets/images/fix-no-name.jpg)
+    
+    2. Game terminates after selecting difficulty level other than E or H
+      - Step to reproduce: 
+        - Start the game.
+        - Enter username and continue.
+        - Enter difficulty level other than E or H.
+        - Game will terminate. 
+           - [Error Screenshot](assets/images/bug-incorrect-difficulty-level.jpg)
+      - Fix:
+        - This was caused as function and variable had same name. 
+        - This was fixed by modifying the variable name.
+          - [Fixed Screenshot](assets/images/fix-incorrect-difficulty-level.jpg)      
 
 
 
