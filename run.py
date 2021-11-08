@@ -71,7 +71,7 @@ def select_difficulty():
         lives = 7
         hangman(lives)
     else:
-        print(tcolors.WARN + "You must select E or H\n" + tcolors.WHITE)
+        print(tcolors.WARN + "You have selected E or H\n" + tcolors.WHITE)
         select_difficulty()
 
 
@@ -96,7 +96,7 @@ def hangman(lives):
     while len(word_letters) > 0 and lives > 0:
         # letters used
         print('You have', lives, 'lives left')
-        print('You have used these letters: ', ' '.join(used_letters))
+        print('You have used these letters: ' + ', '.join(used_letters))
 
         # what the current word is (ie W - R D)
         word_list = [
