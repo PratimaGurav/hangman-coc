@@ -96,6 +96,10 @@
     ![win](assets/images/win.jpg)
     ![lose](assets/images/lose.jpg)  
 
+  - Color Scheme
+    - This has been implemented to enchance user expierence
+      - Yellow for warning messages
+      - 
    
 
  
