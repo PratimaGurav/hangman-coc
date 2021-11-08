@@ -105,6 +105,16 @@
 ## Testing
 
   - ### Bugs
+    1. Game continues with blank username.
+      - Step to reproduce: 
+        - Start the game.
+        - Enter blank username and press enter.
+        - Game will procced to next level without any error message. 
+           - [Error Screenshot](assets/images/bug-no-name.jpg)
+      - Fix:
+        - This was fixed by creating a separate for title message, input username.
+        - Additionally if-else statement was added to check if blank username was entered.
+          - [Fixed Screenshot](assets/images/fix-no-name.jpg)
 
 
 
