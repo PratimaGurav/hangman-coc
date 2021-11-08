@@ -47,9 +47,9 @@ def start_game():
     # print the welcome message
     title_msg()
 
-    name = input("Please enter your name:\n>")
+    name = input("Please enter your username:\n>")
     if name == "":
-        print(tcolors.WARN + "Please enter a name:\n>" + tcolors.WHITE)
+        print(tcolors.WARN + "Please enter a username:\n>" + tcolors.WHITE)
         start_game()
     else:
         print(f"Hello, {name}")
@@ -60,7 +60,8 @@ def select_difficulty():
     """
     Let player set difficulty
     """
-    selected_diff = input("Select difficulty\nEnter E -Easy or H -Hard:\n>")
+    selected_diff = input("Select difficulty\n"
+                          "Please enter E - Easy or H - Hard:\n>")
     selected_diff = selected_diff.upper()
     print("You have chosen: ", selected_diff)
     if selected_diff == 'H':
@@ -70,7 +71,7 @@ def select_difficulty():
         lives = 7
         hangman(lives)
     else:
-        print(tcolors.WARN + "Please select E or H\n" + tcolors.WHITE)
+        print(tcolors.WARN + "You must select E or H\n" + tcolors.WHITE)
         select_difficulty()
 
 
