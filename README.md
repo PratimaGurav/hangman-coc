@@ -4,7 +4,7 @@
 
 ### Python Essentials: A command-line application
 
-![Responsive]
+![Responsive](assets/images/responsive.jpg)
 
 [Click here to view the live project.]
 
