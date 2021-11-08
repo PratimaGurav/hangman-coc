@@ -111,7 +111,8 @@ def hangman(lives):
 
             else:
                 lives = lives - 1  # takes away a life if wrong
-                print(tcolors.WARN + "Letter is not in the word" + tcolors.WHITE)
+                print(tcolors.WARN + "Letter is not in the word" +
+                      tcolors.WHITE)
 
         elif user_letter in used_letters:
             print(tcolors.WARN + "You have already used that letter."
