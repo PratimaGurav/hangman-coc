@@ -70,6 +70,31 @@
 ## Features
 
  ### Existing Features
+  - Homescreen
+    - Displaying title
+    - Game instructions
+    - Retrieve username
+
+    ![homescreen](assets/images/home-screen.jpg)
+
+  - Select difficulty level. 
+    - Easy : 07 lives
+    - Hard : 05 lives  
+
+    ![easy](assets/images/easy.jpg)
+    ![hard](assets/images/hard.jpg)
+
+  - Number of lives are represented with graphic.
+    - Upon incorrect guess hangman builds up and the same is represented by using a image.
+
+    ![hangman-image](assets/images/hangman-image.jpg)
+
+  - Game Over
+    - Game ends either by guessing the word correctly or if user runs out of lives.
+    - Users can opt to play the game again or quit  it.
+
+    ![win](assets/images/win.jpg)
+    ![lose](assets/images/lose.jpg)  
 
    
 
