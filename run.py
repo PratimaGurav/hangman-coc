@@ -49,7 +49,7 @@ def start_game():
 
     name = input("Please enter your name:\n>")
     if name == "":
-        print(tcolors.WARN + "Please enter a name\n>" + tcolors.WHITE)
+        print(tcolors.WARN + "Please enter a name:\n>" + tcolors.WHITE)
         start_game()
     else:
         print(f"Hello, {name}")
