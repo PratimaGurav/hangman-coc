@@ -6,7 +6,7 @@
 
 ![Responsive](assets/images/responsive.jpg)
 
-[Click here to view the live project.]
+[Click here to view the live project.](https://hangman-coc.herokuapp.com/)
 
 [Click here to view the repository.](https://github.com/PratimaGurav/hangman-coc)
 
