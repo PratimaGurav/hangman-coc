@@ -111,10 +111,10 @@ def hangman(lives):
 
             else:
                 lives = lives - 1  # takes away a life if wrong
-                print(tcolors.WARN + "Letter is not in word" + tcolors.WHITE)
+                print(tcolors.WARN + "Letter is not in the word" + tcolors.WHITE)
 
         elif user_letter in used_letters:
-            print(tcolors.WARN + "You have already used that character."
+            print(tcolors.WARN + "You have already used that letter."
                   "Please try again." + tcolors.WHITE)
         else:
             print(tcolors.WARN + "Invalid letter. Please try again." +
@@ -122,7 +122,7 @@ def hangman(lives):
 
     # gets here when len(word_letters) == 0 or when lives == 0
     if lives == 0:
-        print(display_hangman[remaining_lives])
+        print(display_hangman[lives])
         print(tcolors.RED + 'Game Over! The correct word was', word +
               tcolors.WHITE)
         restart_game()
