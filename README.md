@@ -128,7 +128,17 @@
         - This was fixed by modifying the variable name.
           - [Fixed Screenshot](assets/images/fix-incorrect-difficulty-level.jpg)      
 
-
+    3. Hangman was not displayed after losing the last life
+      - Step to reproduce: 
+        - Start the game.
+        - Enter username and continue.
+        - Enter difficulty level either E or H.
+        - Play the game and run out of lives.
+        - Hangman was not displayed at the end.
+           - [Error Screenshot](assets/images/bug-no-display-hangman.jpg)
+      - Fix:
+        - This was fixed by updating the correct variable for displaying hangman.
+          - [Fixed Screenshot](assets/images/fix-display-hangman.jpg)   
 
  - ### Validation
     [PEP8](http://pep8online.com/) was used to validate the code.
