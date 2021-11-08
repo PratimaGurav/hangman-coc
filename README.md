@@ -30,7 +30,7 @@
 
 -   ### Introduction
      Hangman-CoC is a Python based game, which runs in the Code Institue mock terminal on Heroku.
-     It is a challenging word search game involving user interaction to guess a word which would be a name of a country or a city. The game has two difficulty levels which users can select at the start of the game. Users have to guess the letters of the hidden word with limited number of lives which vary based on the difficulty level. Each wrong guess takes away one life. The game is over either when the user has correctly guessed the word or there are no lives remaining.
+     It is a challenging word search game involving user interaction to guess a word which would be a name of a country or a city. Color scheme has been implemented to enhance user experience. The game starts with requesting user to enter a name. The game has two difficulty levels which are Easy and Hard that has to be selected by the user. Users have to guess the letters of the hidden word with limited number of lives which vary based on the difficulty level. Each wrong guess takes away one life building the hangman. The game is over either when the user has correctly guessed the word or there are no lives remaining. 
      
 -   ### How to Play
      Users can play Hangman_CoC using mock terminal. 
@@ -79,13 +79,19 @@
 
   - Select difficulty level. 
     - Easy : 07 lives
-    - Hard : 05 lives  
-
+   
     ![easy](assets/images/easy.jpg)
+
+    - Hard : 05 lives    
+   
     ![hard](assets/images/hard.jpg)
 
   - Number of lives are represented with graphic.
-    - Upon incorrect guess hangman builds up and the same is represented by using a image.
+    - On correct guess, the _ is replaced with the correct letter.
+
+    ![letter-replaced](assets/images/letter-replaced.jpg)
+    
+    - On incorrect guess, hangman builds up and the same is represented by using an image.
 
     ![hangman-image](assets/images/hangman-image.jpg)
 
@@ -96,10 +102,13 @@
     ![win](assets/images/win.jpg)
     ![lose](assets/images/lose.jpg)  
 
-  - Color Scheme
-    - This has been implemented to enchance user expierence
-      - Yellow for warning messages
-      - 
+  - Color Scheme:
+    - This has been implemented to enchance user expierence.
+      - Blue for game instructions.
+      - Yellow for warning messages.
+      - Green for winning the game.
+      - Red for game over when user runs out of lives.
+      
    
 
  
