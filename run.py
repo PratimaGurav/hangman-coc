@@ -89,9 +89,7 @@ def hangman(lives):
     word_letters = set(word)  # letters in word
     alphabet = set(string.ascii_uppercase)
     used_letters = set()  # what the user has guessed
-
-    remaining_lives = lives
-
+    
     # getting user input
     while len(word_letters) > 0 and lives > 0:
         # letters used
@@ -154,6 +152,7 @@ def restart_game():
         else:
             print(tcolors.WARN + "You must select Y or N."
                   "Please try again." + tcolors.WHITE)
+
 
 if __name__ == "__main__":
     start_game()
