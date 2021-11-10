@@ -47,19 +47,19 @@
   - Users can either choose to restart or quit the game.
 
      
--   ### Audience
-     The application is aimed for enthusiasts who like to play guess the word game. People from all ages and different background can play this challenging and interactive game.
+### Audience
+  The application is aimed for enthusiasts who like to play guess the word game. People from all ages and different background can play this challenging and interactive game.
 
--   ### User stories
+### User stories
 
-    -   #### First Time Visitor
-        1. I want to be able to start the game easily.
-        2. I should easily understand the instructions of the game. 
-        3. I want the game to run easily which would keep me engrossed.
+  #### First Time Visitor
+   1. I want to be able to start the game easily.
+   2. I should easily understand the instructions of the game. 
+   3. I want the game to run easily which would keep me engrossed.
 
-    -   #### Returning Visitor
-        1. I should find the game challenging with different difficulty levels.
-        2. I should enjoy the game.   
+  #### Returning Visitor
+   1. I should find the game challenging with different difficulty levels.
+   2. I should enjoy the game.   
 
     
 *   ### Design
