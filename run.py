@@ -145,7 +145,7 @@ def restart_game():
 
         if restart == "Y":
             game_restart = True
-            start_game()
+            select_difficulty()
 
         elif restart == "N":
             game_restart = True

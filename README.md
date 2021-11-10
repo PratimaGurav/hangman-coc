@@ -188,7 +188,7 @@
 
   - ### Known Bugs
 
-    - There are currently no known bugs   
+    - There are currently no known bugs.   
 
 ## Deployment
 
