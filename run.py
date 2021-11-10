@@ -3,6 +3,9 @@ import string
 from words import words
 from hangman_display import display_hangman
 
+# Stack overflow was referred to add color scheme to the project
+# (https://stackoverflow.com/questions/287871/how-to-print-colored-text-to-the-terminal)
+
 
 class tcolors:
     GREEN = '\033[92m'
