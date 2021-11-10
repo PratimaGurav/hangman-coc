@@ -28,22 +28,23 @@
 
 ## User Experience (UX)
 
--   ### Introduction
-     Hangman-CoC is a Python based game, which runs in the Code Institue mock terminal on Heroku.
-     It is a challenging word search game involving user interaction to guess a word which would be a name of a country or a city. Color scheme has been implemented to enhance user experience. The game starts with requesting user to enter a name. The game has two difficulty levels which are Easy and Hard that has to be selected by the user. Users have to guess the letters of the hidden word with limited number of lives which vary based on the difficulty level. Each wrong guess takes away one life building the hangman. The game is over either when the user has correctly guessed the word or there are no lives remaining. 
+### Introduction
+  Hangman-CoC is a Python based game, which runs in the Code Institue mock terminal on Heroku.
+  It is a challenging word search game involving user interaction to guess a word which would be a name of a country or a city. Color scheme has been implemented to enhance user experience. The game starts with requesting user to enter a name. The game has two difficulty levels which are Easy and Hard that has to be selected by the user. Users have to guess the letters of the hidden word with limited number of lives which vary based on the difficulty level. Each wrong guess takes away one life building the hangman. The game is over either when the user has correctly guessed the word or there are no lives remaining. 
      
--   ### How to Play
-     Users can play Hangman_CoC using mock terminal. 
-     -  User will be prompted to enter name to start the game. 
-     -  User will be promoted to select difficulty level. 
-        - Easy and Hard are the two difficulty levels. 
-        - Easy has 7 lives to guess the word while Hard has 5 lives.
-     -  Upon selecting the difficulty level, the game starts with an aim to guess the hidden word. The hidden word is represented by _ _ _ _ which display users the number of letters in the word. 
-     - User now have to guess the letters that would make the word.
-        - With each correct guess, the _ is replaced with the correct letter. 
-        - With each incorrect guess, one life is deducted. This is visualize graphically using hangman. 
-     - The game is over either when the user has correctly guessed the word or they have run out of lives. 
-     - Users can either choose to restart or quit the game.
+### How to Play
+  Users can play Hangman_CoC using mock terminal. 
+  -  User will be prompted to enter name to start the game. 
+  -  User will be promoted to select difficulty level. 
+  - Easy and Hard are the two difficulty levels. 
+  - Easy has 7 lives to guess the word while Hard has 5 lives.
+  -  Upon selecting the difficulty level, the game starts with an aim to guess the hidden word.
+  - The hidden word is represented by _ _which display users the number of letters in the word. 
+  - User now have to guess the letters that would make the word.
+  - With each correct guess, the _ is replaced with the correct letter. 
+  - With each incorrect guess, one life is deducted. This is visualize graphically using hangman. 
+  - The game is over either when the user has correctly guessed the word or they have run out of lives. 
+  - Users can either choose to restart or quit the game.
 
      
 -   ### Audience
