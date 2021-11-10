@@ -64,7 +64,7 @@
     
 ### Design
 
-  - [Code Logic Flowchart]
+  - [Code Logic Flowchart](assets/documents/flowchart.pdf)
    
     
 ## Features
