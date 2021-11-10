@@ -52,7 +52,8 @@ def start_game():
 
     name = input("Please enter your username:\n>")
     if name == "":
-        print(tcolors.WARN + "Please enter a username:\n>" + tcolors.WHITE)
+        print(tcolors.WARN + "Please enter a username to continue:"
+              "\n>" + tcolors.WHITE)
         start_game()
     else:
         print(f"Hello, {name}")
