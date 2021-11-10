@@ -74,7 +74,7 @@ def select_difficulty():
         lives = 7
         hangman(lives)
     else:
-        print(tcolors.WARN + "You have selected E or H\n" + tcolors.WHITE)
+        print(tcolors.WARN + "You must select E or H\n" + tcolors.WHITE)
         select_difficulty()
 
 
