@@ -192,49 +192,48 @@
 
 ## Deployment
 
- - ### GitHub Pages
+### GitHub Pages
 
-  The project was deployed via [Heroku](https://heroku.com/) using the following steps...
+The project was deployed via [Heroku](https://heroku.com/) using the following steps...
+- Creating Application on Heroku:
+  - Ensure all codes are correct and ready for deployment.
+  - Log in to Heroku with your credentials.
+  - Navigate to the Dashboard.
+  - Click "New" and from the drop down menu select "create app". This is located on the upper right side of the window.
+  - Provide a name for your application which has to be unique and select your region.
+  - Click "Create App".
 
-  - Creating Application on Heroku:
-    - Ensure all codes are correct and ready for deployment.
-    - Log in to Heroku with your credentials.
-    - Navigate to the Dashboard.
-    - Click "New" and from the drop down menu select "create app". This is located on the upper right side of the window.
-    - Provide a name for your application which has to be unique and select your region.
-    - Click "Create App".
-
-  - Setting up the Application:
-    - Navigate to "Settings". Scroll to "Config Vars" and select "Reveal Config Vars". Input the following. KEY: PORT, VALUE:8000. The project does not have any confidentail data hence no additional steps needed.
-    - Then scroll and select "Buildpacks" and then click both "python" and "node.js"(node.js is needed for the mock terminal).
-    - Ensure that the python buildpack is above the node.js buildpack, You can click and drag the packs to re-arrange them.
+- Setting up the Application:
+  - Navigate to "Settings". Scroll to "Config Vars" and select "Reveal Config Vars". Input the following. KEY: PORT, VALUE:8000. The project does not have any confidentail data hence no additional steps needed.
+  - Then scroll and select "Buildpacks" and then click both "python" and "node.js"(node.js is needed for the mock terminal).
+  - Ensure that the python buildpack is above the node.js buildpack, You can click and drag the packs to re-arrange them.
     
-  - Application Deployment:
-    - Navigate to the "Deploy" section.
-    - Scroll down to "Deployment Method" and select "GitHub".
-    - Authorize the connection of Heroku and GitHub.
-    - Search for your GitHub repository name, and select the correct repository.
-    - For Deployment there are two options, Automatic Deployments or Manual.
-      - Automatic Deployment: This will prompt Heroku to re-build your app each time you push your code to GitHub.
-      - Manual Deployment: This will only prompt Heroku to build your app when you manually opt to do so.
-    - Ensure the correct branch is selected "master/Main", and select the deployment method that you desire. In this case, I will be using Automatic Deployment.
+- Application Deployment:
+  - Navigate to the "Deploy" section.
+  - Scroll down to "Deployment Method" and select "GitHub".
+  - Authorize the connection of Heroku and GitHub.
+  - Search for your GitHub repository name, and select the correct repository.
+  - For Deployment there are two options, Automatic Deployments or Manual.
+  - Automatic Deployment: This will prompt Heroku to re-build your app each time you push your code to GitHub.
+  - Manual Deployment: This will only prompt Heroku to build your app when you manually opt to do so.
+  - Ensure the correct branch is selected "master/Main", and select the deployment method that you desire. In this case, I will be using Automatic Deployment.
  
 
- - ### Making a Local Clone
+### Making a Local Clone
 
-    1. Log in to GitHub and navigate to the [GitHub Repository](https://github.com/PratimaGurav/hangman-coc)
-    2. To clone the repository using HTTPS, click Code and copy the address. 
-    ![Clone Repository](assets/documents/git-clone.jpg)
-    3. Navigate to Git Bash and clone the repository. 
-    ![Clone-Command](assets/documents/git-clone-command.jpg)
-    4. Press Enter and your local clone will be created. 
-    ![Clone-Output](assets/documents/git-clone-output.jpg)
+  1. Log in to GitHub and navigate to the [GitHub Repository](https://github.com/PratimaGurav/hangman-coc)
+  2. To clone the repository using HTTPS, click Code and copy the address. 
+  ![Clone Repository](assets/images/git-clone.jpg)
+  3. Navigate to Git Bash and clone the repository. 
+  ![Clone-Command](assets/images/git-clone-command.jpg)
+  4. Press Enter and your local clone will be created. 
+  ![Clone-Output](assets/images/git-clone-output.jpg)
 
 ## Credits
 
-  - ### Code
-    - Love-Sandwiches walk through project was referred throughout the project for better understanding.
-    - Stack Overflow was referred to add [colored text](https://stackoverflow.com/questions/287871/how-to-print-colored-text-to-the-terminal) to be printed to the terminal.
+### Code
+- Love-Sandwiches walk through project was referred throughout the project for better understanding.
+- [Stack Overflow](https://stackoverflow.com/) was referred to add [colored text](https://stackoverflow.com/questions/287871/how-to-print-colored-text-to-the-terminal) to be printed to the terminal.
     
 
 ## Acknowledgements
