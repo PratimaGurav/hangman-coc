@@ -62,11 +62,10 @@
    2. I should enjoy the game.   
 
     
-*   ### Design
+### Design
 
-    - [Code Logic Flowchart]
-
-    
+  - [Code Logic Flowchart]
+   
     
 ## Features
 
@@ -103,16 +102,12 @@
     ![win](assets/images/win.jpg)
     ![lose](assets/images/lose.jpg)  
 
-  - Color Scheme:
-    - This has been implemented to enchance user expierence.
+  - Color Scheme: This has been implemented to enchance user expierence.
       - Blue for game instructions.
       - Yellow for warning messages.
       - Green for winning the game.
       - Red for game over when user runs out of lives.
       
-   
-
- 
 
 ### Future Enhancements 
   - Add provision to display hint to user on request.
@@ -130,16 +125,11 @@
 - ### Frameworks, Libraries & Programs Used
 
   
-  - [Git](https://git-scm.com/)
-    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-  - [GitHub:](https://github.com/)
-    - GitHub is used to store the projects code after being pushed from Git.   
-  - [Lucidchart:](https://www.lucidchart.com/)
-    - Lucidchart was used to create the flowchart during the inital phase.
-  - [Heroku](https://heroku.com/)
-    - Heroku applicaiton was used to deploy the project.
-  - [ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Standard&t=Hangman)
-    - ASCII Art Generator was used to generate text for the title.    
+  - [Git](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+  - [GitHub](https://github.com/) was used to store the projects code after being pushed from Git.   
+  - [Lucidchart](https://www.lucidchart.com/) was used to create the flowchart during the inital phase.
+  - [Heroku](https://heroku.com/) applicaiton was used to deploy the project.
+  - [ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Standard&t=Hangman) was used to generate text for the title.    
     
 ## Testing
 
