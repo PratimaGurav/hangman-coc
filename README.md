@@ -116,15 +116,14 @@
 
 ## Technologies Used
 
-- ### Languages Used
+### Languages Used
 
   -   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
   -   [MARKDOWN](https://en.wikipedia.org/wiki/Markdown)
 
 
-- ### Frameworks, Libraries & Programs Used
+### Frameworks, Libraries & Programs Used
 
-  
   - [Git](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
   - [GitHub](https://github.com/) was used to store the projects code after being pushed from Git.   
   - [Lucidchart](https://www.lucidchart.com/) was used to create the flowchart during the inital phase.
@@ -133,61 +132,63 @@
     
 ## Testing
 
-  - ### Bugs
-    1. Game continues with blank username
-      - Step to reproduce: 
-        - Start the game.
-        - Enter blank username and continue.
-        - Game will procced to next level without any error message. 
-           - [Error Screenshot](assets/images/bug-no-name.jpg)
-      - Fix:
-        - This was fixed by creating a separate function for title message and input username.
-        - Additionally if-else statement was added to check if blank username was entered.
-          - [Fixed Screenshot](assets/images/fix-no-name.jpg)
+### Bugs
+  1. Game continues with blank username
+  - Step to reproduce: 
+    - Start the game.
+    - Enter blank username and continue.
+    - Game will procced to next level without any error message. 
+  - [Error Screenshot](assets/images/bug-no-name.jpg)
+  
+  - Fix: 
+    - This was fixed by creating a separate function for title message and input username.
+    - Additionally if-else statement was added to check if blank username was entered.
+  - [Fixed Screenshot](assets/images/fix-no-name.jpg)
     
-    2. Game terminates after selecting difficulty level other than E or H
-      - Step to reproduce: 
-        - Start the game.
-        - Enter username and continue.
-        - Enter difficulty level other than E or H.
-        - Game will terminate. 
-           - [Error Screenshot](assets/images/bug-incorrect-difficulty-level.jpg)
-      - Fix:
-        - This was caused as function and variable had same name. 
-        - This was fixed by modifying the variable name.
-          - [Fixed Screenshot](assets/images/fix-incorrect-difficulty-level.jpg)      
+  2. Game terminates after selecting difficulty level other than E or H
+  - Step to reproduce: 
+    - Start the game.
+    - Enter username and continue.
+    - Enter difficulty level other than E or H.
+    - Game will terminate. 
+  - [Error Screenshot](assets/images/bug-incorrect-difficulty-level.jpg)
+  
+  - Fix:
+    - This was caused as function and variable had same name. 
+    - This was fixed by modifying the variable name.
+  - [Fixed Screenshot](assets/images/fix-incorrect-difficulty-level.jpg)      
 
-    3. Hangman was not displayed after losing the last life
-      - Step to reproduce: 
-        - Start the game.
-        - Enter username and continue.
-        - Enter difficulty level either E or H.
-        - Play the game and run out of lives.
-        - Hangman was not displayed at the end.
-           - [Error Screenshot](assets/images/bug-no-display-hangman.jpg)
-      - Fix:
-        - This was fixed by updating the correct variable for displaying hangman.
-          - [Fixed Screenshot](assets/images/fix-display-hangman.jpg)   
+  3. Hangman was not displayed after losing the last life
+  - Step to reproduce: 
+    - Start the game.
+    - Enter username and continue.
+    - Enter difficulty level either E or H.
+    - Play the game and run out of lives.
+    - Hangman was not displayed at the end.
+  - [Error Screenshot](assets/images/bug-no-display-hangman.jpg)
+  
+  - Fix:
+    - This was fixed by updating the correct variable for displaying hangman.
+  - [Fixed Screenshot](assets/images/fix-display-hangman.jpg)   
 
- - ### Validation
-    [PEP8](http://pep8online.com/) was used to validate the code.
-    Following errors were found and fixed while validation:-
+### Validation
+  [PEP8](http://pep8online.com/) was used to validate the code.
+  
+  Following errors were found and fixed while validation:
+  - [Error](assets/documents/pep8-error-run.jpg)
+  
+  Fixed : Added new lines and shortened the print messages. 
 
-    [Error](assets/documents/pep8-error-run.jpg)
-    Fixed : Added new lines and shortened the print messages. 
 
+### Further Testing
 
- - ### Further Testing
-
-    - Friends and family members were asked to play the quiz and provide feedback.
-      - How to play the game was added as few members were mot aware of playing hangman digitaly.
-
-    
-   
+ - Friends and family members were asked to play the quiz and provide feedback.
+    - How to play the game was added as few members were mot aware of playing hangman digitaly.
+    - Color scheme was added at later stage to provide better user expierence.
 
   - ### Known Bugs
 
-    -   
+    - There are currently no known bugs   
 
 ## Deployment
 
