@@ -204,7 +204,7 @@ The project was deployed via [Heroku](https://heroku.com/) using the following s
   - Click "Create App".
 
 - Setting up the Application:
-  - Navigate to "Settings". Scroll to "Config Vars" and select "Reveal Config Vars". Input the following. KEY: PORT, VALUE:8000. The project does not have any confidentail data hence no additional steps needed.
+  - Navigate to "Settings". Scroll to "Config Vars" and select "Reveal Config Vars". Input the following. KEY: PORT, VALUE:8000. The project does not have any confidential data hence no additional steps needed.
   - Then scroll and select "Buildpacks" and then click both "python" and "node.js"(node.js is needed for the mock terminal).
   - Ensure that the python buildpack is above the node.js buildpack, You can click and drag the packs to re-arrange them.
     
@@ -240,7 +240,6 @@ The project was deployed via [Heroku](https://heroku.com/) using the following s
 
   -   My Mentor for continuous helpful feedback and advises.
   -   All the tutors (Scott, Ed and Igor) for helping me understand and fix few bugs.
-  -   Slack community and my fellow slackers for being available at any given time of the day.
 
 
 ## [BACK TO TOP](https://github.com/PratimaGurav/hangman-coc#hangman-coc-country-or-city)
