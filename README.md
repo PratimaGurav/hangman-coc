@@ -64,7 +64,9 @@
     
 ### Design
 
-  - [Code Logic Flowchart](assets/documents/flowchart.pdf)
+  - During planning and design phase, I thought of different steps and the conditions involved in this game of hangman.
+  - The below flowchart was created which was used as reference during the entire coding phase.
+    [Code Logic Flowchart](assets/documents/flowchart.pdf)
    
     
 ## Features
