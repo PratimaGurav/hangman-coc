@@ -66,6 +66,7 @@
 
   - During planning and design phase, I thought of different steps and the conditions involved in this game of hangman.
   - The below flowchart was created which was used as reference during the entire coding phase.
+    
     [Code Logic Flowchart](assets/documents/flowchart.pdf)
    
     
@@ -73,7 +74,7 @@
 
  ### Existing Features
   - Homescreen
-    - Displaying title
+    - Display title
     - Game instructions
     - Retrieve username
 
@@ -105,7 +106,7 @@
     ![lose](assets/images/lose.jpg)  
 
   - Color Scheme: This has been implemented to enchance user expierence.
-      - Blue for game instructions.
+      - Blue for game instructions and farewell message.
       - Yellow for warning messages.
       - Green for winning the game.
       - Red for game over when user runs out of lives.
@@ -135,6 +136,9 @@
 ## Testing
 
 ### Bugs
+  A thorough testing was done to check if the game works as expected in all scenarios. 
+  Below bugs were found and fixed during this process. 
+
   1. Game continues with blank username
   - Step to reproduce: 
     - Start the game.
