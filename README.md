@@ -181,7 +181,7 @@
   [PEP8](http://pep8online.com/) was used to validate the code.
   
   Following errors were found and fixed while validation:
-  - [Error](assets/documents/pep8-error-run.jpg)
+  - [Error](assets/images/pep8-error-run.jpg)
   
   Fixed : Added new lines and shortened the print messages. 
 
